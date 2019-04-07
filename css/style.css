@@ -48,7 +48,6 @@ p {
   display: -ms-inline-flexbox;
   display: inline-flex;
   float: left;
-  width: auto;
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -56,7 +55,6 @@ p {
 
 .link .line {
   z-index: -1;
-  width: 100%;
   border-bottom: 4px solid #E38181;
   margin-top: -6px;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
