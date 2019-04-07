@@ -76,21 +76,20 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    flex-wrap: wrap;
+    
     margin: 0;
 
     .name { display: inline-block }
     .social {
         display: inline-block;
-        
         ul {
-
             padding: 0;
 
             list-style-type: none;
         }
 
-        li { display: inline-block }
+        li { display: inline-flex }
 
         .youtube:hover, .youtube:hover, .youtube:hover { transition: 0.2s ease-in-out }
 
