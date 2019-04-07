@@ -44,6 +44,9 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   float: left;
   width: auto;
   font-weight: 700;
@@ -120,6 +123,11 @@ header .social .twitter:hover {
   fill: #1da1f2;
 }
 
+.newline {
+  display: block;
+  margin-top: 42px;
+}
+
 .bio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,10 +152,6 @@ header .social .twitter:hover {
 
 @media screen and (max-width: 1362px) {
   .details {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .details .item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -181,7 +185,7 @@ header .social .twitter:hover {
   padding: 0;
 }
 
-.details .competences .item .content, .details .experiences .item .content, .details .other .item .content {
+.details .competences .item .content, .details .competences .item .content-list, .details .experiences .item .content, .details .experiences .item .content-list, .details .other .item .content, .details .other .item .content-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,8 +197,20 @@ header .social .twitter:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 21.2px;
+}
+
+.details .competences .item .content, .details .experiences .item .content, .details .other .item .content {
   height: 62.4px;
   width: 350px;
+}
+
+@media screen and (max-width: 560px) {
+  .details .competences .item .content, .details .experiences .item .content, .details .other .item .content {
+    height: auto;
+    width: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
 }
 
 .details .competences .item .content .footer, .details .experiences .item .content .footer, .details .other .item .content .footer {
@@ -208,18 +224,14 @@ header .social .twitter:hover {
 }
 
 .details .competences .item .content-list, .details .experiences .item .content-list, .details .other .item .content-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 21.2px;
   width: 175px;
+}
+
+@media screen and (max-width: 560px) {
+  .details .competences .item .content-list, .details .experiences .item .content-list, .details .other .item .content-list {
+    height: auto;
+    width: auto;
+  }
 }
 
 .details .competences .item .content-list ul, .details .experiences .item .content-list ul, .details .other .item .content-list ul {

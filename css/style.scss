@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
 
-$small: 1362px;
+$medium: 1362px;
+$small: 560px;
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -43,6 +44,7 @@ p {
 .link {
     display: flex;
     flex-direction: column;
+    display: inline-flex;
 
     float: left;
     width: auto;
@@ -98,6 +100,11 @@ header {
     }
 }
 
+.newline {
+    display: block;
+    margin-top: 42px;
+}
+
 .bio {
     display: flex;
     flex-direction: column;
@@ -108,16 +115,14 @@ header {
     align-items: flex-start;
     justify-content: space-between;
 
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: $medium) {
         flex-wrap: wrap;
-
-        .item { flex-wrap: wrap }
     }
-
+    
     .competences, .experiences, .other {
         h3 {
             display: flex;
-
+            
             margin-bottom: 25px;
         }
         .item  {
@@ -137,16 +142,24 @@ header {
                     padding: 0;
                 }
             }
-            .content {
+            .content, .content-list {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                
-                margin-bottom: 21.2px;
 
+                margin-bottom: 21.2px; 
+            }
+            .content {
                 height: 62.4px;
                 width: 350px;
+                
+                @media screen and (max-width: $small) {
+                    height: auto;
+                    width: auto;
 
+                    overflow-wrap: break-word;
+                    word-wrap: break-word;
+                }
                 .footer {
                     display: flex;
 
@@ -154,14 +167,12 @@ header {
                 }
             }
             .content-list {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-
-                margin-bottom: 21.2px;
-
                 width: 175px;
 
+                @media screen and (max-width: $small) {
+                    height: auto;
+                    width: auto
+                }
                 ul {
                     list-style-type: none;
 
