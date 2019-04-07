@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+
+    padding: 0 40px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 { 
+    font-weight: 700;
+    font-size: 22pt;
+}
+
+h3 { 
+    font-weight: 400;
+    font-size: 24pt;
+}
+
+h5 { 
+    font-weight: 500;
+    font-size: 13pt;
+}
+
+.text-gray { color: #888888 }
+
+p {
+    float: left;
+
+    font-weight: 500;
+
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+
+    float: left;
+    width: auto;
+    
+    font-weight: 700;
+
+    margin: 0;
+    padding: 0;
+
+    .line {
+        z-index: -1;
+        width: 100%;
+        border-bottom: 4px solid #E38181;
+        margin-top: -6px;
+
+        transition: transform 0.2s ease-in-out;
+        transform-origin: bottom left;
+    }
+
+    .text:hover {
+        + .line {
+            transform: scale(1, 2);
+        }
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+
+    .name { display: inline-block }
+    .social {
+        display: inline-block;
+        
+        ul {
+
+            padding: 0;
+
+            list-style-type: none;
+        }
+
+        li { display: inline-block }
+
+        .youtube:hover, .youtube:hover, .youtube:hover { transition: 0.2s ease-in-out }
+
+        .youtube:hover { fill: #ff0000 }
+        .github:hover { fill: #333333 }
+        .twitter:hover { fill: #1da1f2 }
+    }
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+}
+
+.details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .competences, .experiences, .other {
+        h3 {
+            display: flex;
+
+            margin-bottom: 25px;
+        }
+        .item  {
+            display: flex;
+
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 0;
+
+            .title {
+                display: flex;
+
+                h5 {
+                    width: 100px;
+
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                margin-bottom: 21.2px;
+
+                height: 62.4px;
+                width: 350px;
+
+                .footer {
+                    display: flex;
+
+                    p { font-weight: 300 }
+                }
+            }
+            .content-list {
+                display: flex;
+                
+                margin-bottom: 21.2px;
+
+                ul {
+                    list-style-type: none;
+
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .other {
+        margin-right: 5%;
+    }
+}

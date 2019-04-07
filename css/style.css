@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700");
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13pt;
+  padding: 0 40px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 22pt;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 24pt;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 13pt;
+}
+
+.text-gray {
+  color: #888888;
+}
+
+p {
+  float: left;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  float: left;
+  width: auto;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.link .line {
+  z-index: -1;
+  width: 100%;
+  border-bottom: 4px solid #E38181;
+  margin-top: -6px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.link .text:hover + .line {
+  -webkit-transform: scale(1, 2);
+          transform: scale(1, 2);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+header .name {
+  display: inline-block;
+}
+
+header .social {
+  display: inline-block;
+}
+
+header .social ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+header .social li {
+  display: inline-block;
+}
+
+header .social .youtube:hover, header .social .youtube:hover, header .social .youtube:hover {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+header .social .youtube:hover {
+  fill: #ff0000;
+}
+
+header .social .github:hover {
+  fill: #333333;
+}
+
+header .social .twitter:hover {
+  fill: #1da1f2;
+}
+
+.bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.details .competences h3, .details .experiences h3, .details .other h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.details .competences .item, .details .experiences .item, .details .other .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.details .competences .item .title, .details .experiences .item .title, .details .other .item .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.details .competences .item .title h5, .details .experiences .item .title h5, .details .other .item .title h5 {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.details .competences .item .content, .details .experiences .item .content, .details .other .item .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 21.2px;
+  height: 62.4px;
+  width: 350px;
+}
+
+.details .competences .item .content .footer, .details .experiences .item .content .footer, .details .other .item .content .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.details .competences .item .content .footer p, .details .experiences .item .content .footer p, .details .other .item .content .footer p {
+  font-weight: 300;
+}
+
+.details .competences .item .content-list, .details .experiences .item .content-list, .details .other .item .content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 21.2px;
+}
+
+.details .competences .item .content-list ul, .details .experiences .item .content-list ul, .details .other .item .content-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.details .other {
+  margin-right: 5%;
+}
+/*# sourceMappingURL=style.css.map */
