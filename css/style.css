@@ -142,6 +142,17 @@ header .social .twitter:hover {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1362px) {
+  .details {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .details .item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .details .competences h3, .details .experiences h3, .details .other h3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,7 +211,15 @@ header .social .twitter:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 21.2px;
+  width: 175px;
 }
 
 .details .competences .item .content-list ul, .details .experiences .item .content-list ul, .details .other .item .content-list ul {

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
 
+$small: 1362px;
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 13pt;
@@ -106,6 +108,12 @@ header {
     align-items: flex-start;
     justify-content: space-between;
 
+    @media screen and (max-width: $small) {
+        flex-wrap: wrap;
+
+        .item { flex-wrap: wrap }
+    }
+
     .competences, .experiences, .other {
         h3 {
             display: flex;
@@ -147,8 +155,12 @@ header {
             }
             .content-list {
                 display: flex;
-                
+                flex-direction: column;
+                justify-content: space-between;
+
                 margin-bottom: 21.2px;
+
+                width: 175px;
 
                 ul {
                     list-style-type: none;
