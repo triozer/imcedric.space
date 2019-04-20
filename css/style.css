@@ -226,7 +226,7 @@ header .social .twitter:hover {
 }
 
 .details .competences .item .content-list, .details .experiences .item .content-list, .details .other .item .content-list {
-  width: 175px;
+  width: 185px;
 }
 
 @media screen and (max-width: 560px) {

@@ -144,8 +144,6 @@ header {
                 flex-direction: column;
                 justify-content: space-between;
                
-                width: 180px;
-
                 margin-bottom: 21.2px; 
             }
             .content {
@@ -166,7 +164,7 @@ header {
                 }
             }
             .content-list {
-                width: 180px;
+                width: 185px;
 
                 @media screen and (max-width: $small) {
                     height: auto;
